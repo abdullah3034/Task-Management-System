@@ -17,7 +17,8 @@ function Dashboard() {
 
   const getDashboard = async () => {
     const response = await axios.get('api/dashboard')
-    setDashboardData(response.data)
+    setDashboardData(response.data);
+    console.log(response.data);
   }
   useEffect(() => {
     getDashboard()
